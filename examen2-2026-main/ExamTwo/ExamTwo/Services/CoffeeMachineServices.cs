@@ -15,8 +15,8 @@ namespace ExamTwo.Services
 
     public interface ICoffeeMachineService
     {
+        Dictionary<string, int> GetCoffeeTypes();
         Dictionary<string, int> GetCoffeePrices();
-        Dictionary<string, int> GetCoffeePricesInCents();
         Dictionary<int, int> GetCoinInventory();
         PurchaseResult BuyCoffee(OrderRequest request);
     }
@@ -30,11 +30,11 @@ namespace ExamTwo.Services
             _repo = repo;
         }
 
+    public Dictionary<string, int> GetCoffeeTypes() => _repo.GetCoffeeTypes();
+
     public Dictionary<string, int> GetCoffeePrices() => _repo.GetCoffeePrices();
 
-    public Dictionary<string, int> GetCoffeePricesInCents() => _repo.GetCoffeePrices();
-
-        public Dictionary<int, int> GetCoinInventory() => _repo.GetCoinInventory();
+    public Dictionary<int, int> GetCoinInventory() => _repo.GetCoinInventory();
         public PurchaseResult BuyCoffee(OrderRequest request)
         {
             if (request?.Order == null || request.Order.Count == 0)
