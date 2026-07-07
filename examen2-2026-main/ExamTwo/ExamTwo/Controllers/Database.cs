@@ -2,7 +2,7 @@
 {
     public class Database
     {
-        public Dictionary<string, int> tipoCafe = new Dictionary<string, int>
+        public Dictionary<string, int> coffeeTypes = new Dictionary<string, int>
         {
             { "Americano", 10 },
             { "Cappuccino", 8 },
@@ -10,7 +10,7 @@
             { "Mocaccino", 15}
         };
 
-        public Dictionary<string, int> precioCafe = new Dictionary<string, int>
+        public Dictionary<string, int> coffeePrices = new Dictionary<string, int>
         {
             { "Americano", 950 },
             { "Cappuccino", 1200 },
@@ -18,7 +18,7 @@
             { "Mocaccino", 1500}
         };
 
-        public Dictionary<int, int> inventarioMonedas = new Dictionary<int, int>
+        public Dictionary<int, int> coinInventory = new Dictionary<int, int>
         {
             { 500, 20 },
             { 100, 30 },

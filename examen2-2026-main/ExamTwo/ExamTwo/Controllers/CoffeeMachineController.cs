@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-// using ExamTwo.Repositories;
-// using ExamTwo.Services;
-//using ExamTwo.Models;
+using ExamTwo.Repositories;
+using ExamTwo.Services;
+using ExamTwo.Models;
 
 namespace ExamTwo.Controllers
 {
